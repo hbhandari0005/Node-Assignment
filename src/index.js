@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use('/', schoolsRouter);
 
-// app.get('/', (req, res) => res.send('School Management API is running'));
+app.get('/', (req, res) => res.send('School Management API is running'));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Server running on port ${port}`));
